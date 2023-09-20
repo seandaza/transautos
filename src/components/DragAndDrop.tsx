@@ -12,7 +12,7 @@ export const DragAndDrop = () => {
   return (
     <>
       <Message urlImage={urlImage} />
-      <ImageUploading multiple={false} value={images} onChange={handleChange} maxNumber={1}>
+      <ImageUploading multiple={true} value={images} onChange={handleChange} >
         {({
           imageList,
           onImageUpload,
